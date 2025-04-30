@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove.bg - AI Image Background Removal Tool | Toolify.ai</title>
+    <meta name="description" content="Remove.bg is a free AI tool that automatically removes backgrounds from images in seconds - no design skills required. Perfect for e-commerce, marketing, and social media.">
+    <meta name="keywords" content="remove background, image editing, AI background removal, transparent background, photo editor">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Apple-style color palette
+                        primary: '#0071e3', // Apple blue
+                        secondary: '#86868b', // Apple gray
+                        dark: '#1d1d1f', // Dark text
+                        light: '#f5f5f7', // Light background
+                        accent: '#06c', // Secondary blue
+                        primaryHover: '#6a4ddb',
+                        lightGray: '#f5f5f7',
+                        textGray: '#555',
+                        textDark: '#333',
+                        tagBg: '#f0f0f0',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        .hover-scale {
+            transition: transform 0.2s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: translateY(-4px);
+        }
+        @media (max-width: 768px) {
+            .mobile-padding {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-lightGray text-textDark leading-relaxed">
+    <!-- Top Navigation Bar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-5 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="text-primary mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:h-8 md:w-8" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1-4h2v2h-2v-2zm0-8h2v6h-2V8z"/>
+                    </svg>
+                </div>
+                <div class="text-lg md:text-xl font-bold">APicture.space</div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-dark hover:text-primary transition-colors duration-200 text-sm md:text-base">Favorites</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <div class="max-w-7xl mx-auto px-5 py-6">
+            <!-- Tool Title Area -->
+            <div class="flex items-center gap-12 mb-4">
+                <div>
+                    <h1 class="text-4xl font-bold text-textDark">Remove.bg</h1>
+                </div>
+                <div>
+                    <a href="https://www.remove.bg?utm_source=apicture.space" target="_blank" rel="noopener" class="bg-primary text-white px-5 py-2.5 rounded font-bold flex items-center gap-2">
+                        <i class="fas fa-external-link-alt"></i> Open Website
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tool Info and Image -->
+            <div class="flex flex-col md:flex-row gap-8 mb-8 items-start">
+                <!-- Tool Information -->
+                <div class="bg-white rounded-lg p-5 shadow h-auto md:w-1/2 self-start">
+                    <div class="flex mb-4">
+                        <div class="w-24 font-bold text-textGray">About:</div>
+                        <div>Remove.bg is a free tool that automatically removes image backgrounds with just one click</div>
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="w-24 font-bold text-textGray">Listed:</div>
+                        <div>April 27, 2525</div>
+                    </div>
+                    <div class="flex mb-4">
+                        <div class="w-24 font-bold text-textGray">Rating:</div>
+                        <div class="flex items-center text-primary">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="ml-1 text-textGray">5</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Tags -->
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="bg-tagBg px-3 py-1 rounded-full text-sm text-textGray">Free Tool</span>
+                        <span class="bg-tagBg px-3 py-1 rounded-full text-sm text-textGray">AI Background Remover</span>
+                        <span class="bg-tagBg px-3 py-1 rounded-full text-sm text-textGray">Photo & Image Editor</span>
+                    </div>
+                </div>
+
+                <!-- Tool Image -->
+                <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow md:w-1/2 self-start">
+                    <img src="../assets/screenshots/removebg.jpg" alt="Remove.bg Screenshot" class="w-full rounded-lg transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                        <div class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                            <a href="https://www.remove.bg?utm_source=apicture.space" target="_blank" class="bg-primary text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 hover:bg-opacity-90 transition-colors">
+                                <i class="fas fa-external-link-alt"></i> Visit Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab Navigation -->
+            <div class="bg-white rounded-lg shadow mb-8">
+                <ul class="flex nav-tabs">
+                    <li class="relative nav-item">
+                        <a href="#tool-info-section" class="block px-5 py-4 text-primary font-bold">Product Info</a>
+                        <div class="absolute bottom-0 left-0 w-full h-1 bg-primary"></div>
+                    </li>
+                    <!-- <li>
+                        <a href="#social-listening-section" class="block px-5 py-4 text-textGray">
+                            What People Say<span class="bg-red-500 text-white text-xs px-1 rounded ml-1">NEW</span>
+                        </a>
+                    </li> -->
+                    <li class="relative nav-item">
+                        <a href="#related-tools-section" class="block px-5 py-4 text-textGray">Related Tools</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tool Detailed Information -->
+            <div id="tool-info-section" class="bg-white rounded-lg p-6 shadow mb-8">
+                <h2 class="text-2xl font-bold text-textDark mb-6 pb-4 border-b border-gray-200">Remove.bg Product Information</h2>
+                
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4 text-textDark">What is Remove.bg?</h3>
+                    <p class="text-gray-600">Remove.bg is a free online tool that automatically removes the background from any image with a single click, creating transparent or custom background images without requiring professional editing skills.</p>
+                </div>
+                
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4 text-textDark">How to Use Remove.bg?</h3>
+                    <p class="text-gray-600">Simply upload your image to the Remove.bg website, and the AI will automatically detect and remove the background (usually within 5 seconds). You can then download the processed image with a transparent background.</p>
+                </div>
+                
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4 text-textDark">Remove.bg Use Cases</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div>E-commerce sellers: Quickly create professional product images, save on hiring photographers, and improve product page conversion rates</div>
+                        </li>
+                        <li class="flex items-start">
+                            <div>Marketers: Rapidly create consistent brand materials without waiting for design teams, meeting urgent marketing campaign needs</div>
+                        </li>
+                        <li class="flex items-start">
+                            <div>Photographers: Batch process client photos, save hours of manual background removal time, and improve workflow efficiency</div>
+                        </li>
+                        <li class="flex items-start">
+                            <div>Designers: Instantly obtain transparent assets, avoid complex Photoshop masking operations, and accelerate the design process</div>
+                        </li>
+                        <li class="flex items-start">
+                            <div>Social media content creators: Quickly enhance personal images, create high-quality content without professional equipment</div>
+                        </li>
+                        <li class="flex items-start">
+                            <div>Small business owners: Create professional marketing materials without design knowledge, saving on outsourcing costs</div>
+                        </li>
+                        <li class="flex items-start">
+                            <div>Students: Easily complete assignments and presentations without learning complex image editing techniques</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- What People Say Section -->
+            <!-- <div id="social-listening-section" class="bg-white rounded-lg p-6 shadow mb-8">
+                <h2 class="text-2xl font-bold text-textDark mb-6 pb-4 border-b border-gray-200">
+                    What People Say <span class="bg-red-500 text-white text-xs px-1 rounded ml-1">NEW</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    
+                    
+                </div>
+            </div> -->
+            
+            <!-- Related Tools -->
+            <div id="related-tools-section" class="bg-lightGray rounded-lg p-6 mb-8">
+                <h2 class="text-2xl font-bold text-textDark mb-6 pb-4 border-b border-gray-200">Related Tools</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Tool Card 1 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-md hover:-translate-y-1 transition-all">
+                        <div class="h-40 overflow-hidden relative group cursor-pointer">
+                            <img src="../assets/screenshots/erasebgorg.jpg" alt="Erase BG Screenshot" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                                <div class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                    <a href="./erasebg.html" target="_blank" rel="noopener" class="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2 hover:bg-opacity-90 transition-colors">
+                                        <i class="fas fa-external-link-alt"></i> Visit Tool
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="font-semibold text-textDark">Erase BG</h3>
+                                <a href="./erasebg.html" target="_blank" rel="noopener" class="w-6 h-6 rounded-full bg-gray-100 text-textGray flex items-center justify-center hover:bg-primary hover:text-white transition-colors" title="View Details">
+                                    <i class="fas fa-external-link-alt text-xs"></i>
+                                </a>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">Erase BG is a free online AI background removal tool that supports 4K resolution</p>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-tagBg px-2 py-0.5 rounded text-xs text-textGray">Free Tool</span>
+                                <span class="bg-tagBg px-2 py-0.5 rounded text-xs text-textGray">Background Removal</span>
+                                <span class="bg-tagBg px-2 py-0.5 rounded text-xs text-textGray">4K Resolution</span>
+                                <span class="bg-tagBg px-2 py-0.5 rounded text-xs text-textGray">No Registration</span>
+                                <span class="bg-tagBg px-3 py-1 rounded-full text-sm text-textGray">Image Editing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tool Card 2 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-md hover:-translate-y-1 transition-all">
+                        <div class="h-40 overflow-hidden relative group cursor-pointer">
+                            <img src="../assets/screenshots/bgeraser.jpg" alt="BGEraser Screenshot" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                                <div class="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                    <a href="./bgeraser.html" target="_blank" rel="noopener" class="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2 hover:bg-opacity-90 transition-colors">
+                                        <i class="fas fa-external-link-alt"></i> Visit Tool
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="font-semibold text-textDark">BG Eraser</h3>
+                                <a href="./bgeraser.html" target="_blank" rel="noopener" class="w-6 h-6 rounded-full bg-gray-100 text-textGray flex items-center justify-center hover:bg-primary hover:text-white transition-colors" title="View Details">
+                                    <i class="fas fa-external-link-alt text-xs"></i>
+                                </a>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">BG Eraser is a free online tool that supports batch processing to remove backgrounds from multiple images at once
+                            </p>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-tagBg px-2 py-0.5 rounded text-xs text-textGray">Free Tool</span>
+                                <span class="bg-tagBg px-2 py-0.5 rounded text-xs text-textGray">AI Background Removal</span>
+                                <span class="bg-tagBg px-2 py-0.5 rounded text-xs text-textGray">Batch Processing</span>
+                                <span class="bg-tagBg px-2 py-0.5 rounded text-xs text-textGray">Image Editing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-8 md:py-12">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="flex flex-wrap justify-between">
+                <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">About Us</h4>
+                    <p class="text-gray-400 text-sm">APIcture.space is your premier platform for discovering and exploring the best AI tools. We carefully curate and evaluate various AI tools to help you find the solution that best fits your needs.</p>
+                </div>
+                <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Submit Tool</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/4 mb-6 md:mb-0">
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center">
+                            <i class="ri-mail-line mr-2 text-primary"></i>
+                            <a href="mailto:contact@apicture.space" class="text-gray-400 hover:text-white transition-colors duration-200">contact@apicture.space</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-twitter-x-line mr-2 text-primary"></i>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">@apicture</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/4">
+                    <h4 class="text-lg font-semibold mb-4">Subscribe</h4>
+                    <p class="text-gray-400 mb-2 text-sm">Get the latest AI tools and industry updates</p>
+                    <div class="flex">
+                        <input type="email" class="flex-1 px-3 py-2 text-dark border border-gray-700 rounded-l-md focus:outline-none focus:ring-1 focus:ring-primary text-sm" placeholder="Your email">
+                        <button class="bg-primary text-white px-4 py-2 rounded-r-md hover:bg-accent transition-colors duration-200 text-sm">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-500 text-sm">© 2025 APIcture.space. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Tab navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // 确保所有内容部分在页面加载时都是可见的
+            document.querySelectorAll('#tool-info-section, #related-tools-section').forEach(section => {
+                section.style.display = 'block';
+            });
+            
+            // 使用更精确的选择器获取导航容器
+            const navContainer = document.querySelector('.nav-tabs');
+            
+            // 初始化第一个标签为活动状态
+            const firstTab = navContainer.querySelector('.nav-item a');
+            if (firstTab) {
+                firstTab.classList.add('text-primary', 'font-bold');
+                firstTab.classList.remove('text-textGray');
+                
+                const li = firstTab.parentElement;
+                if (!li.querySelector('div.h-1')) { // 添加更精确的选择器
+                    const border = document.createElement('div');
+                    border.className = 'absolute bottom-0 left-0 w-full h-1 bg-primary';
+                    li.appendChild(border);
+                }
+            }
+            
+            // 为导航标签添加点击事件处理 - 使用更精确的选择器
+            navContainer.querySelectorAll('.nav-item a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    // 只更新导航标签的样式，使用更精确的选择器
+                    navContainer.querySelectorAll('.nav-item a').forEach(link => {
+                        link.classList.remove('text-primary', 'font-bold');
+                        link.classList.add('text-textGray');
+                        
+                        // 移除底部边框，使用更精确的选择器
+                        const li = link.parentElement;
+                        const border = li.querySelector('div.h-1');
+                        if (border) border.remove();
+                    });
+                    
+                    // 添加活动状态到当前点击的标签
+                    this.classList.remove('text-textGray');
+                    this.classList.add('text-primary', 'font-bold');
+                    const li = this.parentElement;
+                    
+                    // 添加底部边框
+                    if (!li.querySelector('div.h-1')) { // 添加更精确的选择器
+                        const border = document.createElement('div');
+                        border.className = 'absolute bottom-0 left-0 w-full h-1 bg-primary';
+                        li.appendChild(border);
+                    }
+                    
+                    // 滚动到目标位置，但不隐藏任何内容
+                    const targetId = this.getAttribute('href');
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // 监听滚动，根据当前视图位置更新活动标签
+            window.addEventListener('scroll', function() {
+                const sections = [
+                    document.getElementById('tool-info-section'),
+                    document.getElementById('related-tools-section')
+                ];
+                
+                let currentSection = '';
+                
+                sections.forEach(section => {
+                    if (!section) return;
+                    
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.pageYOffset >= (sectionTop - 200)) {
+                        currentSection = '#' + section.getAttribute('id');
+                    }
+                });
+                
+                if (currentSection) {
+                    // 只更新导航标签的样式，使用更精确的选择器
+                    navContainer.querySelectorAll('.nav-item a').forEach(link => {
+                        // 移除活动状态
+                        link.classList.remove('text-primary', 'font-bold');
+                        link.classList.add('text-textGray');
+                        const li = link.parentElement;
+                        const border = li.querySelector('div.h-1');
+                        if (border) border.remove();
+                        
+                        // 添加活动状态
+                        if (link.getAttribute('href') === currentSection) {
+                            link.classList.remove('text-textGray');
+                            link.classList.add('text-primary', 'font-bold');
+                            
+                            // 添加底部边框
+                            if (!li.querySelector('div.h-1')) { // 添加更精确的选择器
+                                const newBorder = document.createElement('div');
+                                newBorder.className = 'absolute bottom-0 left-0 w-full h-1 bg-primary';
+                                li.appendChild(newBorder);
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+    
+    <!-- Include JS files, ensure data.js is loaded first -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
