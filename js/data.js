@@ -13,26 +13,20 @@ const sectionConfig = [
         showMore: false,
         tools: [
             {
-                name: 'Remove.bg',
-                description: 'Remove.bg is a free online tool that automatically removes image backgrounds with a single click',
-                icon: 'removebg.webp',
+                name: 'StockCake',
+                description: 'Free AI image library with high-quality copyright-free photos and usable prompts',
+                icon: 'stockcake.png',
                 iconBg: 'teal',
-                detailUrl: 'tools/removebg.html'
-            },
-            {
-                name: 'Bg Eraser',
-                description: 'BG Eraser is a free online tool that supports batch processing to remove backgrounds from multiple images at once',
-                icon: 'bgeraser.jpg',
-                iconBg: 'teal',
-                detailUrl: 'tools/bgeraser.html'
-            },
-            {
-                name: 'Erase BG',
-                description: 'Erase BG is a free online AI background removal tool that supports 4K resolution',
-                icon: 'erasebgorg.webp',
-                iconBg: 'teal',
-                detailUrl: 'tools/erasebg.html'
+                detailUrl: 'tools/stockcake.html'
             }
+            // ,
+            // {
+            //     name: 'getimg.ai',
+            //     description: '一套神奇的AI工具套件，用于生成、修改和扩展图片。',
+            //     icon: 'getimg.jpg',
+            //     iconBg: 'teal',
+            //     detailUrl: 'tools/getimg.html'
+            // }
         ]
     },
     {
@@ -41,7 +35,21 @@ const sectionConfig = [
         icon: 'ri-image-line',
         showMore: false,
         tools: [
-           
+            {
+                name: 'StockCake',
+                description: 'Free AI image library with high-quality copyright-free photos and usable prompts',
+                icon: 'stockcake.png',
+                iconBg: 'teal',
+                detailUrl: 'tools/stockcake.html'
+            }
+            // ,
+            // {
+            //     name: 'getimg.ai',
+            //     description: '一套神奇的AI工具套件，用于生成、修改和扩展图片。',
+            //     icon: 'getimg.jpg',
+            //     iconBg: 'teal',
+            //     detailUrl: 'tools/getimg.html'
+            // }
         ]
     },
     {
@@ -87,6 +95,126 @@ const sectionConfig = [
 // 工具数据
 const toolsData = {
     // 工具ID作为键名
+    'stockcake': {
+        id: 'stockcake',
+        name: 'StockCake',
+        description: '免费AI图像资源库，提供高质量无版权图片和可用提示词',
+        fullDescription: `StockCake是一个革命性的免费图像库，提供各种场合的引人入胜的图片。它包含数百万张AI生成的高质量照片，所有照片均完全免费，属于公共领域。无论您是设计师、营销人员还是内容创建者，StockCake都提供了无穷无尽的图像，让您的项目栩栩如生。
+
+每张图片都含有提示词，方便您更好地创作和定制图像。与传统图库不同，StockCake采用先进的人工智能技术生成独特且多样化的图像，确保每位用户都能找到完美匹配其项目的视觉内容。
+
+StockCake的使命是为全球创意人士提供无限制的视觉资源，帮助他们将想法转化为现实，同时不必担心版权问题或额外费用。`,
+        icon: 'stockcake.png',
+        iconBg: 'teal',
+        iconColor: 'text-teal-500',
+        category: '图像资源',
+        rating: 5.0,
+        views: '85.2k',
+        pricing: '完全免费',
+        updatedAt: '2024年5月10日',
+        creator: 'StockCake Team',
+        website: 'https://stockcake.com/',
+        platforms: ['Web应用'],
+        features: [
+            {
+                icon: 'ri-image-line',
+                name: '高质量AI图像',
+                description: '数百万张AI生成的高质量图片，满足各种创意需求'
+            },
+            {
+                icon: 'ri-price-tag-3-line',
+                name: '完全免费无版权',
+                description: '所有图片均免费使用，无需归属，适用于商业和个人项目'
+            },
+            {
+                icon: 'ri-text-wrap',
+                name: '附带提示词',
+                description: '每张图片都包含生成它的提示词，方便进一步创作和定制'
+            },
+            {
+                icon: 'ri-apps-line',
+                name: '多样化图像类别',
+                description: '涵盖商业、自然、食物、科技等多种主题的图像'
+            },
+            {
+                icon: 'ri-search-line',
+                name: '智能搜索功能',
+                description: '强大的搜索功能，帮助用户快速找到所需图片'
+            },
+            {
+                icon: 'ri-download-line',
+                name: '一键下载',
+                description: '简单易用的下载功能，无需注册即可获取图片'
+            }
+        ],
+        useCases: [
+            {
+                name: '数字营销材料',
+                description: '为社交媒体帖子、电子邮件营销活动、网站横幅和在线广告创建吸引人的视觉内容'
+            },
+            {
+                name: '网站和博客设计',
+                description: '为网站和博客提供高质量的图片，增强用户体验和视觉吸引力'
+            },
+            {
+                name: '社交媒体内容',
+                description: '创建具有吸引力的社交媒体内容，提高参与度和关注度'
+            },
+            {
+                name: '演示文稿和报告',
+                description: '为商业演示文稿和报告添加专业图片，增强信息传达效果'
+            }
+        ],
+        reviews: [
+            {
+                user: {
+                    name: '李晓',
+                    initials: 'LX'
+                },
+                rating: 5,
+                comment: '作为自由设计师，StockCake是我的救星！高质量的免费图片让我的设计工作更加轻松，而且不用担心版权问题。强烈推荐给所有创意工作者！'
+            },
+            {
+                user: {
+                    name: '张明',
+                    initials: 'ZM'
+                },
+                rating: 5,
+                comment: 'StockCake的图片质量令人惊叹，我特别喜欢可以获取提示词的功能，让我能够进一步定制图像。对于经常需要视觉内容的内容创作者来说，这是必备工具。'
+            },
+            {
+                user: {
+                    name: '王芳',
+                    initials: 'WF'
+                },
+                rating: 5,
+                comment: '终于找到一个真正免费且高质量的图库！StockCake的多样化图像满足了我所有的项目需求，搜索功能也非常直观。无需注册就能下载是最大优点！'
+            }
+        ],
+        similarTools: [
+            {
+                id: 'midjourney',
+                name: 'Midjourney',
+                description: '强大的AI图像生成工具',
+                icon: 'ri-shape-line',
+                iconColor: 'text-blue-500'
+            },
+            {
+                id: 'dalle',
+                name: 'DALL-E',
+                description: 'OpenAI开发的AI图像生成工具',
+                icon: 'ri-image-line',
+                iconColor: 'text-green-500'
+            },
+            {
+                id: 'unsplash',
+                name: 'Unsplash',
+                description: '免费高质量摄影图片网站',
+                icon: 'ri-camera-line',
+                iconColor: 'text-gray-500'
+            }
+        ]
+    },
     'midjourney': {
         id: 'midjourney',
         name: 'Midjourney',
@@ -435,6 +563,124 @@ With continuous contributions from the community, Stable Diffusion continues to 
         category: '图像编辑',
         rating: 4.5,
         views: '32.7k',
+    },
+    'getimg': {
+        id: 'getimg',
+        name: 'GetImg.ai',
+        description: 'AI图像转视频与吉卜力艺术风格生成平台',
+        fullDescription: `GetImg.ai是一个AI创意平台，专注于图像转视频和艺术风格生成。它的特色功能包括将静态图像变成动画视频、应用吉卜力风格滤镜、文本生成图像以及图像编辑工具。该平台以高质量的吉卜力艺术风格渲染和流畅的图像转视频效果而闻名。
+
+用户只需访问官网(https://getimg.ai/)创建账户即可开始使用。上传图像或输入文本描述，选择所需功能（如图像转视频或吉卜力风格），调整参数后生成结果。界面直观简单，即使没有技术背景也能轻松操作。初次注册提供免费积分体验核心功能。`,
+        icon: 'getimg.jpg',
+        iconBg: 'teal',
+        iconColor: 'text-teal-500',
+        category: '图像生成/视频生成',
+        rating: 4.8,
+        views: '93.6k',
+        pricing: '免费试用/订阅制',
+        updatedAt: '2024年5月15日',
+        creator: 'GetImg Team',
+        website: 'https://getimg.ai/',
+        platforms: ['Web应用'],
+        features: [
+            {
+                icon: 'ri-movie-line',
+                name: '图像转视频技术',
+                description: '将静态图像转换为流畅动态视频，支持多种动画效果'
+            },
+            {
+                icon: 'ri-brush-line',
+                name: '吉卜力艺术风格生成',
+                description: '应用吉卜力工作室标志性的视觉美学，捕捉宫崎骏作品中的水彩质感和梦幻氛围'
+            },
+            {
+                icon: 'ri-text-wrap',
+                name: '文本到图像生成',
+                description: '通过详细描述创建原创图像，高精度理解文本指令'
+            },
+            {
+                icon: 'ri-image-edit-line',
+                name: '图像编辑工具',
+                description: '扩展边界、修复和增强图像，提供专业编辑功能'
+            },
+            {
+                icon: 'ri-folder-transfer-line',
+                name: '批量处理',
+                description: '同时处理多张图像，提高工作效率'
+            },
+            {
+                icon: 'ri-settings-line',
+                name: '高级定制选项',
+                description: '精细调整艺术风格和动画效果参数'
+            }
+        ],
+        useCases: [
+            {
+                name: '创意内容和营销',
+                description: '内容创作者利用图像转视频和吉卜力风格制作吸引人的社交媒体内容，提高互动率；营销人员将产品图像转换为动态内容'
+            },
+            {
+                name: '艺术创作',
+                description: '艺术家将原创作品转换为吉卜力风格或添加动态效果，创造全新艺术表达'
+            },
+            {
+                name: '教育应用',
+                description: '教育工作者使用动态视觉内容提高学生参与度和理解力'
+            },
+            {
+                name: '个人项目',
+                description: '将个人照片和创意转换为艺术作品或动态影像，用于社交分享或个人收藏'
+            }
+        ],
+        reviews: [
+            {
+                user: {
+                    name: '王明',
+                    initials: 'WM'
+                },
+                rating: 5,
+                comment: '吉卜力风格生成功能令人惊叹！我将家庭照片转换成了宫崎骏风格的艺术作品，效果超出预期。图像转视频的流畅度也非常出色。'
+            },
+            {
+                user: {
+                    name: '李华',
+                    initials: 'LH'
+                },
+                rating: 4,
+                comment: '作为内容创作者，GetImg.ai为我的作品增添了全新维度。唯一的小缺点是高质量输出需要更多积分，但考虑到结果质量，这是值得的。'
+            },
+            {
+                user: {
+                    name: '张芳',
+                    initials: 'ZF'
+                },
+                rating: 5,
+                comment: '界面直观易用，即使是AI新手也能快速上手。特别喜欢批量处理功能，大大提高了工作效率。强烈推荐给所有需要高质量视觉内容的人！'
+            }
+        ],
+        similarTools: [
+            {
+                id: 'midjourney',
+                name: 'Midjourney',
+                description: '强大的AI图像生成工具',
+                icon: 'ri-shape-line',
+                iconColor: 'text-blue-500'
+            },
+            {
+                id: 'runway-gen2',
+                name: 'Runway Gen-2',
+                description: '支持文本到视频、图像到视频转换的AI创意工具',
+                icon: 'ri-movie-line',
+                iconColor: 'text-indigo-500'
+            },
+            {
+                id: 'dalle',
+                name: 'DALL-E',
+                description: 'OpenAI开发的AI图像生成工具',
+                icon: 'ri-image-line',
+                iconColor: 'text-green-500'
+            }
+        ]
     }
 };
 
@@ -445,14 +691,14 @@ const categoriesData = [
         name: '近期上线',
         icon: 'ri-time-line',
         description: '最新发布的AI工具',
-        toolIds: ['midjourney', 'dalle', 'stable-diffusion', 'adobe-firefly', 'runway-gen2', 'leonardo-ai']
+        toolIds: ['stockcake', 'midjourney', 'dalle', 'stable-diffusion', 'adobe-firefly', 'runway-gen2', 'leonardo-ai']
     },
     {
         id: 'image-generation',
         name: '图像生成',
         icon: 'ri-image-line',
         description: '创建各种风格的AI生成图像',
-        toolIds: ['midjourney', 'dalle', 'stable-diffusion', 'adobe-firefly', 'leonardo-ai']
+        toolIds: ['stockcake', 'midjourney', 'dalle', 'stable-diffusion', 'adobe-firefly', 'leonardo-ai']
     },
     {
         id: 'image-editing',
