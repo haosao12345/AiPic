@@ -19,14 +19,14 @@ const sectionConfig = [
                 iconBg: 'teal',
                 detailUrl: 'tools/stockcake.html'
             }
-            // ,
-            // {
-            //     name: 'getimg.ai',
-            //     description: '一套神奇的AI工具套件，用于生成、修改和扩展图片。',
-            //     icon: 'getimg.jpg',
-            //     iconBg: 'teal',
-            //     detailUrl: 'tools/getimg.html'
-            // }
+            ,
+            {
+                name: 'getimg.ai',
+                description: 'AI Image-to-Video & Studio Ghibli Style Generation Platform',
+                icon: 'getimg.jpg',
+                iconBg: 'teal',
+                detailUrl: 'tools/getimg.html'
+            }
         ]
     },
     {
@@ -42,14 +42,14 @@ const sectionConfig = [
                 iconBg: 'teal',
                 detailUrl: 'tools/stockcake.html'
             }
-            // ,
-            // {
-            //     name: 'getimg.ai',
-            //     description: '一套神奇的AI工具套件，用于生成、修改和扩展图片。',
-            //     icon: 'getimg.jpg',
-            //     iconBg: 'teal',
-            //     detailUrl: 'tools/getimg.html'
-            // }
+            ,
+            {
+                name: 'getimg.ai',
+                description: 'AI Image-to-Video & Studio Ghibli Style Generation Platform',
+                icon: 'getimg.jpg',
+                iconBg: 'teal',
+                detailUrl: 'tools/getimg.html'
+            }
         ]
     },
     {

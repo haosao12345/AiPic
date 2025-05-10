@@ -256,6 +256,14 @@ The following SEO optimizations have been implemented in this project:
 - **Unified Description Standardization**: Standardized the description format and feature presentation of the three tools, improving user experience consistency
 - **Tool Comparison Guidance**: Guided users to compare different tool features (single image processing/batch processing/4K resolution, etc.) through side-by-side display
 
+### Version 6.1 (网站图标集成)
+- **全站图标实现**: 在所有HTML页面添加favicon.ico，保证品牌一致性
+- **多目录支持**: 为根目录和子目录页面实现了相对路径的图标引用
+- **双格式支持**: 添加了标准图标和快捷图标链接，确保最大化浏览器兼容性
+- **视觉标识增强**: 通过一致的图标提升浏览器标签识别度
+- **跨浏览器兼容**: 确保网站图标在所有主流浏览器中正确显示
+- **SEO优化**: 增强了书签和标签中的专业外观和品牌识别度
+
 ## Directory Structure
 
 ```
