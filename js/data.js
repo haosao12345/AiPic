@@ -18,14 +18,20 @@ const sectionConfig = [
                 icon: 'stockcake.png',
                 iconBg: 'teal',
                 detailUrl: 'tools/stockcake.html'
-            }
-            ,
+            },
             {
                 name: 'getimg.ai',
                 description: 'AI Image-to-Video & Studio Ghibli Style Generation Platform',
                 icon: 'getimg.jpg',
                 iconBg: 'teal',
                 detailUrl: 'tools/getimg.html'
+            },
+            {
+                name: 'Raphael AI',
+                description: 'An unlimited free AI image generator with high-quality output',
+                icon: 'raphael.png',
+                iconBg: 'teal',
+                detailUrl: 'tools/raphael.html'
             }
         ]
     },
@@ -41,14 +47,20 @@ const sectionConfig = [
                 icon: 'stockcake.png',
                 iconBg: 'teal',
                 detailUrl: 'tools/stockcake.html'
-            }
-            ,
+            },
             {
                 name: 'getimg.ai',
                 description: 'AI Image-to-Video & Studio Ghibli Style Generation Platform',
                 icon: 'getimg.jpg',
                 iconBg: 'teal',
                 detailUrl: 'tools/getimg.html'
+            },
+            {
+                name: 'Raphael AI',
+                description: 'An unlimited free AI image generator with high-quality output',
+                icon: 'raphael.png',
+                iconBg: 'teal',
+                detailUrl: 'tools/raphael.html'
             }
         ]
     },
