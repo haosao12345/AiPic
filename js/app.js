@@ -21,9 +21,12 @@ function generateSectionHTML(section) {
         if (tool.detailUrl) {
             // 使用工具配置中指定的URL
             detailUrl = tool.detailUrl;
+        } else if (toolId && typeof window !== 'undefined' && window.location) {
+            // 使用直接的工具HTML页面链接，避免查询参数
+            detailUrl = `tools/${toolId}.html`;
         } else {
-            // 使用默认的工具详情页面链接
-            detailUrl = toolId ? `tool-detail.html?id=${toolId}` : '#';
+            // 回退链接
+            detailUrl = '#';
         }
         
         return `

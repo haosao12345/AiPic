@@ -1,0 +1,12 @@
+# APicture.space robots.txt
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /tools/
+
+# 确保只索引规范URL
+Disallow: /*?*id=*
+Disallow: /*&id=*
+
+# 告诉搜索引擎我们的Sitemap位置
+Sitemap: https://apicture.space/sitemap.xml 

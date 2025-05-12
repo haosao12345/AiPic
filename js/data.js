@@ -33,6 +33,14 @@ const sectionConfig = [
                 iconBg: 'teal',
                 detailUrl: 'tools/raphael.html'
             }
+            // ,
+            // {
+            //     name: 'Fotor',
+            //     description: '一款免费在线且多功能的Al照片编辑器',
+            //     icon: 'Fotor.png',
+            //     iconBg: 'teal',
+            //     detailUrl: 'tools/raphael.html'
+            // }
         ]
     },
     {

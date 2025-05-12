@@ -17,6 +17,22 @@
     <title>Seaart.ai - AI Image Generation Tool | Toolify.ai</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- 动态设置规范URL -->
+    <script>
+      // 获取当前URL中的id参数
+      const urlParams = new URLSearchParams(window.location.search);
+      const toolId = urlParams.get('id');
+      
+      // 根据不同的工具ID设置不同的规范URL
+      if (toolId) {
+        const canonicalLink = document.createElement('link');
+        canonicalLink.rel = 'canonical';
+        canonicalLink.href = `https://apicture.space/tools/${toolId}.html`;
+        document.head.appendChild(canonicalLink);
+      }
+    </script>
+    <!-- 添加机器人元标记，防止重复索引 -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
