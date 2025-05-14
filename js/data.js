@@ -33,13 +33,13 @@ const sectionConfig = [
                 iconBg: 'teal',
                 detailUrl: 'tools/raphael.html'
             },
-            // {
-            //     name: 'Fotor',
-            //     description: '一款免费在线终极Al照片编辑工具箱',
-            //     icon: 'Fotor.png',
-            //     iconBg: 'teal',
-            //     detailUrl: 'tools/raphael.html'
-            // }
+            {
+                name: 'Fotor',
+                description: 'An online free ultimate AI photo editing toolkit',
+                icon: 'Fotor.png',
+                iconBg: 'teal',
+                detailUrl: 'tools/fotor.html'
+            }
         ]
     },
     {
@@ -97,6 +97,13 @@ const sectionConfig = [
                 icon: 'erasebgorg.webp',
                 iconBg: 'teal',
                 detailUrl: 'tools/erasebg.html'
+            },
+            {
+                name: 'Fotor',
+                description: 'An online free ultimate AI photo editing toolkit',
+                icon: 'Fotor.png',
+                iconBg: 'teal',
+                detailUrl: 'tools/fotor.html'
             }
         ]
     },
