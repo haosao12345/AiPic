@@ -13,33 +13,20 @@ const sectionConfig = [
         showMore: false,
         tools: [
             {
-                name: 'StockCake',
-                description: 'Free AI image library with high-quality copyright-free photos and usable prompts',
-                icon: 'stockcake.png',
-                iconBg: 'teal',
-                detailUrl: 'tools/stockcake.html'
-            },
-            {
-                name: 'getimg.ai',
-                description: 'AI Image-to-Video & Studio Ghibli Style Generation Platform',
-                icon: 'getimg.jpg',
-                iconBg: 'teal',
-                detailUrl: 'tools/getimg.html'
-            },
-            {
-                name: 'Raphael AI',
-                description: 'An unlimited free AI image generator with high-quality output',
-                icon: 'raphael.png',
-                iconBg: 'teal',
-                detailUrl: 'tools/raphael.html'
-            },
-            {
                 name: 'Fotor',
                 description: 'An online free ultimate AI photo editing toolkit',
                 icon: 'Fotor.png',
                 iconBg: 'teal',
                 detailUrl: 'tools/fotor.html'
             }
+            // ,
+            // {
+            //     name: 'Seaart.ai',
+            //     description: '免费的图片和视频的在线生成工具网站',
+            //     icon: 'seaart.png',
+            //     iconBg: 'teal',
+            //     detailUrl: 'tools/fotor.html'
+            // }
         ]
     },
     {
@@ -137,7 +124,7 @@ StockCake的使命是为全球创意人士提供无限制的视觉资源，帮�
         rating: 5.0,
         views: '85.2k',
         pricing: '完全免费',
-        updatedAt: '2024年5月10日',
+        updatedAt: '2025年5月15日',
         creator: 'StockCake Team',
         website: 'https://stockcake.com/',
         platforms: ['Web应用'],
