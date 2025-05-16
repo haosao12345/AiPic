@@ -18,14 +18,13 @@ const sectionConfig = [
                 icon: 'Fotor.png',
                 iconBg: 'teal',
                 detailUrl: 'tools/fotor.html'
-            }
-            // ,
+            },
             // {
             //     name: 'Seaart.ai',
-            //     description: '免费的图片和视频的在线生成工具网站',
+            //     description: 'Professional online AI art image and video generation platform',
             //     icon: 'seaart.png',
             //     iconBg: 'teal',
-            //     detailUrl: 'tools/fotor.html'
+            //     detailUrl: 'tools/seaart.html'
             // }
         ]
     },
@@ -55,7 +54,14 @@ const sectionConfig = [
                 icon: 'raphael.png',
                 iconBg: 'teal',
                 detailUrl: 'tools/raphael.html'
-            }
+            },
+            // {
+            //     name: 'Seaart.ai',
+            //     description: 'Professional online AI art image and video generation platform',
+            //     icon: 'seaart.png',
+            //     iconBg: 'teal',
+            //     detailUrl: 'tools/seaart.html'
+            // }
         ]
     },
     {
@@ -100,7 +106,13 @@ const sectionConfig = [
         icon: 'ri-movie-line',
         showMore: false,
         tools: [
-            
+            // {
+            //     name: 'Seaart.ai',
+            //     description: 'Professional online AI art image and video generation platform',
+            //     icon: 'seaart.png',
+            //     iconBg: 'teal',
+            //     detailUrl: 'tools/seaart.html'
+            // }
         ]
     }
 ];
@@ -694,6 +706,14 @@ With continuous contributions from the community, Stable Diffusion continues to 
                 iconColor: 'text-green-500'
             }
         ]
+    },
+    'seaart': {
+        id: 'seaart',
+        name: 'Seaart.ai',
+        url: 'https://seaart.ai/',
+        icon: 'seaart.png',
+        detailUrl: 'tools/seaart.html',
+        tags: ['AI图像', '文本到图像'],
     }
 };
 
