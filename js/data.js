@@ -19,13 +19,13 @@ const sectionConfig = [
                 iconBg: 'teal',
                 detailUrl: 'tools/fotor.html'
             },
-            // { 
-            //     name: 'Seaart.ai',
-            //     description: 'Professional online AI art image and video generation platform',
-            //     icon: 'seaart.png',
-            //     iconBg: 'teal',
-            //     detailUrl: 'tools/seaart.html'
-            // }
+            { 
+                name: 'Seaart.ai',
+                description: 'Professional online AI art image and video generation platform',
+                icon: 'seaart.png',
+                iconBg: 'teal',
+                detailUrl: 'tools/seaart.html'
+            }
             // AI Ease
             // Picsart
         ]
@@ -57,13 +57,13 @@ const sectionConfig = [
                 iconBg: 'teal',
                 detailUrl: 'tools/raphael.html'
             },
-            // {
-            //     name: 'Seaart.ai',
-            //     description: 'Professional online AI art image and video generation platform',
-            //     icon: 'seaart.png',
-            //     iconBg: 'teal',
-            //     detailUrl: 'tools/seaart.html'
-            // }
+            {
+                name: 'Seaart.ai',
+                description: 'Professional online AI art image and video generation platform',
+                icon: 'seaart.png',
+                iconBg: 'teal',
+                detailUrl: 'tools/seaart.html'
+            }
         ]
     },
     {
@@ -108,13 +108,13 @@ const sectionConfig = [
         icon: 'ri-movie-line',
         showMore: false,
         tools: [
-            // {
-            //     name: 'Seaart.ai',
-            //     description: 'Professional online AI art image and video generation platform',
-            //     icon: 'seaart.png',
-            //     iconBg: 'teal',
-            //     detailUrl: 'tools/seaart.html'
-            // }
+            {
+                name: 'Seaart.ai',
+                description: 'Professional online AI art image and video generation platform',
+                icon: 'seaart.png',
+                iconBg: 'teal',
+                detailUrl: 'tools/seaart.html'
+            }
         ]
     }
 ];
