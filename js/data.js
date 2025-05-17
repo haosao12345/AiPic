@@ -26,8 +26,23 @@ const sectionConfig = [
                 iconBg: 'teal',
                 detailUrl: 'tools/seaart.html'
             }
-            // AI Ease
-            // Picsart
+            // ,
+            // { 
+            //     name: 'Picsart',
+            //     description: 'Professional online AI art image and video generation platform',
+            //     icon: 'picsart.png',
+            //     iconBg: 'teal',
+            //     detailUrl: 'tools/picsart.html'
+            // },
+            // { 
+            //     name: 'AI Ease',
+            //     description: 'Professional online AI art image and video generation platform',
+            //     icon: 'AIEase.webp',
+            //     iconBg: 'teal',
+            //     detailUrl: 'tools/seaart.html'
+            // }
+            // 
+            // 
         ]
     },
     {
