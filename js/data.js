@@ -26,14 +26,14 @@ const sectionConfig = [
                 iconBg: 'teal',
                 detailUrl: 'tools/seaart.html'
             }
-            // ,
-            // { 
-            //     name: 'Picsart',
-            //     description: 'Professional online AI art image and video generation platform',
-            //     icon: 'picsart.png',
-            //     iconBg: 'teal',
-            //     detailUrl: 'tools/picsart.html'
-            // },
+            ,
+            { 
+                name: 'Picsart',
+                description: 'A comprehensive tool for image editing and graphic design',
+                icon: 'picsart.png',
+                iconBg: 'teal',
+                detailUrl: 'tools/picsart.html'
+            },
             // { 
             //     name: 'AI Ease',
             //     description: 'Professional online AI art image and video generation platform',
@@ -42,7 +42,7 @@ const sectionConfig = [
             //     detailUrl: 'tools/seaart.html'
             // }
             // 
-            // 
+            // freepik  提示词 
         ]
     },
     {
@@ -78,6 +78,13 @@ const sectionConfig = [
                 icon: 'seaart.png',
                 iconBg: 'teal',
                 detailUrl: 'tools/seaart.html'
+            },
+            { 
+                name: 'Picsart',
+                description: 'A comprehensive tool for image editing and graphic design',
+                icon: 'picsart.png',
+                iconBg: 'teal',
+                detailUrl: 'tools/picsart.html'
             }
         ]
     },
@@ -114,6 +121,13 @@ const sectionConfig = [
                 icon: 'Fotor.png',
                 iconBg: 'teal',
                 detailUrl: 'tools/fotor.html'
+            },
+            { 
+                name: 'Picsart',
+                description: 'A comprehensive tool for image editing and graphic design',
+                icon: 'picsart.png',
+                iconBg: 'teal',
+                detailUrl: 'tools/picsart.html'
             }
         ]
     },
