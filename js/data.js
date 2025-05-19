@@ -12,21 +12,6 @@ const sectionConfig = [
         icon: 'ri-time-line',
         showMore: false,
         tools: [
-            {
-                name: 'Fotor',
-                description: 'An online free ultimate AI photo editing toolkit',
-                icon: 'Fotor.png',
-                iconBg: 'teal',
-                detailUrl: 'tools/fotor.html'
-            },
-            { 
-                name: 'Seaart.ai',
-                description: 'Professional online AI art image and video generation platform',
-                icon: 'seaart.png',
-                iconBg: 'teal',
-                detailUrl: 'tools/seaart.html'
-            }
-            ,
             { 
                 name: 'Picsart',
                 description: 'A comprehensive tool for image editing and graphic design',
@@ -34,15 +19,16 @@ const sectionConfig = [
                 iconBg: 'teal',
                 detailUrl: 'tools/picsart.html'
             },
-            // { 
-            //     name: 'AI Ease',
-            //     description: 'Professional online AI art image and video generation platform',
-            //     icon: 'AIEase.webp',
-            //     iconBg: 'teal',
-            //     detailUrl: 'tools/seaart.html'
-            // }
+            { 
+                name: 'ImgGen AI',
+                description: 'An AI image generator (text to image) and image enhancement toolkit',
+                icon: 'imggenai.webp',
+                iconBg: 'teal',
+                detailUrl: 'tools/imggen.html'
+            }
             // 
             // freepik  提示词 
+            //googlewhisk
         ]
     },
     {
@@ -85,6 +71,13 @@ const sectionConfig = [
                 icon: 'picsart.png',
                 iconBg: 'teal',
                 detailUrl: 'tools/picsart.html'
+            },
+            { 
+                name: 'ImgGen AI',
+                description: 'An AI image generator (text to image) and image enhancement toolkit',
+                icon: 'imggenai.webp',
+                iconBg: 'teal',
+                detailUrl: 'tools/imggen.html'
             }
         ]
     },
@@ -128,6 +121,13 @@ const sectionConfig = [
                 icon: 'picsart.png',
                 iconBg: 'teal',
                 detailUrl: 'tools/picsart.html'
+            },
+            { 
+                name: 'ImgGen AI',
+                description: 'An AI image generator (text to image) and image enhancement toolkit',
+                icon: 'imggenai.webp',
+                iconBg: 'teal',
+                detailUrl: 'tools/imggen.html'
             }
         ]
     },
